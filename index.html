@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB TIN HỌC</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="sup_tool.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+  </head>
+  <body onload="changeImg(),modalRegister(),taskBarHeader()">
+    <div id="main">
+      <header id="head">
+        <div id="header_top">
+          <img src="logo_tinhoc123.svg" alt="logo_tinhoc" />
+        </div>
+        <div id="header_menu">
+          <ul id="list_menu_header">
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li><a href="#">Diễn đàn</a></li>
+            <li><a href="#" id="crs_btn">Khoá học</a></li>
+            <li>
+              <a href="#">More <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="task_bar">
+                <li><a href="#">Đăng kí</a></li>
+                <li><a href="#">Thông tin</a></li>
+                <li>
+                  <a
+                    href="mailto:2151053052quy@ou.edu.vn?subject=Phản hồi&body=Góp ý"
+                    >EMAIL</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="search_section">
+              <input type="text" name="search" id="search_text" placeholder="Tìm khoá học..."> <i class="fa-solid fa-magnifying-glass"  id="search_btn"></i>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="slider">
+        <div class="text_slider">
+          <h2 class="text_heading">- Học lập trình -</h2>
+          <div class="text_description">Từ cơ bản đến nâng cao</div>
+        </div>
+      </div>
+      <div id="course_list">
+        <div class="course_list_header">
+          <h1 class="animate__animated animate__flash">
+            DANH SÁCH CÁC KHOÁ HỌC
+          </h1>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="course_list_menu">
+          <ul class="course_list_items">
+            <li rel="html">
+              <img src="css2_logo.png" alt="html_logo" />
+              <p>html</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: HTML</li>
+                  <li>SỐ LƯỢNG: 1000</li>
+                  <li>CÒN LẠI: 54</li>
+                </ul>
+              </div>
+            </li>
+            <li rel="css">
+              <img src="css2_logo.png" alt="css_logo" />
+              <p>css</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: CSS</li>
+                  <li>SỐ LƯỢNG: 1000</li>
+                  <li>CÒN LẠI: 54</li>
+                </ul>
+              </div>
+            </li>
+            <li rel="javascript">
+              <img src="css2_logo.png" alt="js_logo" />
+              <p>javascript</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: JAVASCRIPT</li>
+                  <li>SỐ LƯỢNG: 1500</li>
+                  <li>CÒN LẠI: 250</li>
+                </ul>
+              </div>
+            </li>
+            <li rel="react js">
+              <img src="css2_logo.png" alt="reactjs_logo" />
+              <p>react js</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: REACT JS</li>
+                  <li>SỐ LƯỢNG: 500</li>
+                  <li>CÒN LẠI: 243</li>
+                </ul>
+              </div>
+              <span>NEW!!!</span>
+            </li>
+            <li rel="php">
+              <img src="css2_logo.png" alt="js_logo" />
+              <p>php</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: PHP</li>
+                  <li>SỐ LƯỢNG: 1000</li>
+                  <li>CÒN LẠI: 415</li>
+                </ul>
+              </div>
+            </li>
+            <li rel=". net">
+              <img src="css2_logo.png" alt="reactjs_logo" />
+              <p>.net</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: DOC NET</li>
+                  <li>SỐ LƯỢNG: 1000</li>
+                  <li>CÒN LẠI: 615</li>
+                </ul>
+              </div>
+              <span>NEW!!!</span>
+            </li>
+            <li rel="jquey">
+              <img src="css2_logo.png" alt="reactjs_logo" />
+              <p>jquery</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: JQUERY</li>
+                  <li>SỐ LƯỢNG: 1000</li>
+                  <li>CÒN LẠI: 370</li>
+                </ul>
+              </div>
+              <span>NEW!!!</span>
+            </li>
+            <li rel="python">
+              <img src="css2_logo.png" alt="js_logo" />
+              <p>python</p>
+              <div class="detail">
+                <ul>
+                  <li>TÊN KHOÁ: PYTHON</li>
+                  <li>SỐ LƯỢNG: 500</li>
+                  <li>CÒN LẠI: 100</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+
+      <div id="why_join">
+        <div class="why_join_heading">
+          <h2>Diễn đàn trao đổi tin học</h2>
+          <p class="animate__animated animate__zoomIn">
+            Chia sẻ tri thức, hướng tới tương lai
+          </p>
+        </div>
+        <div class="why_join_icons">
+          <div>
+            <img src="donut.png" alt="donut" /><i
+              class="animate__animated animate__fadeIn"
+              >EASY</i
+            >
+          </div>
+          <div>
+            <img src="donut.png" alt="donut" /><i
+              class="animate__animated animate__fadeIn"
+              >FAST</i
+            >
+          </div>
+          <div>
+            <img src="donut.png" alt="donut" /><i
+              class="animate__animated animate__fadeIn"
+              >GOOD</i
+            >
+          </div>
+          <div>
+            <img src="donut.png" alt="donut" /><i
+              class="animate__animated animate__fadeIn"
+              >SMART</i
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="card_items">
+        <div class="card_heading">
+          <h2>Giao diện thẻ VIP</h2>
+          <p></p>
+          <p>
+            Đăng kí và kích hoạt thẻ VIP để sử dụng mọi chức năng của khoá học
+          </p>
+        </div>
+
+        <div class="item_card_section">
+          <div class="choose_front_rear">
+            <a href="#" rel="card-vip-1">Mặt trước</a>
+            <a href="#" rel="card-vip-2">Mặt sau</a>
+          </div>
+          <br />
+          <ul class="card_item">
+            <li>
+              <img
+                src="card-vip-1.png"
+                id="mainImg"
+                alt="card-vip-1"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+
+      <div id="register">
+        <a href="#" class="btn_register">Đăng kí ngay bây giờ!!!</a>
+      </div>
+
+      <br />
+      <div id="ensure">
+        <h3>
+          Bằng sự nỗ lực và nhiệt huyết chúng tôi cam kết sau khi học tập bạn sẽ
+          trở thành một người phát triển với đầy đủ các phẩm chất:
+        </h3>
+        <ul class="ensure_list">
+          <li>Trách nhiệm</li>
+          <li>Toàn diện</li>
+          <li>Thành công</li>
+        </ul>
+      </div>
+
+      <br />
+
+      <footer id="foot">
+        <div id="pad">
+          <div>
+            <ul class="list_footer">
+              <li>
+                <h4>Thông tin liên hệ</h4>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> Số nhà 13 ngõ 259/9
+                  phố vọng, Đồng tâm, Hai Bà Trưng, Hà Nội
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-envelope"></i> Email:
+                  Support@tinhoc123.net
+                </p>
+              </li>
+              <li>
+                <p><i class="fa-solid fa-phone"></i> Tel: 02436628077</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list_footer">
+              <li>
+                <h4>Giấy phép & Dịch vụ</h4>
+              </li>
+              <li>
+                <p>
+                  Giấy phép ĐKKD SỐ: 0102852740 cấp bởi Sở Kế hoạch và Đầu tư Hà
+                  Nội.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Giấy phép cung cấp dịch vụ mạng xã hội học Tin Học trực tuyến
+                  SỐ: 520/GP-BTTTT cấp bởi Bộ Thông tin & Truyền thông.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list_footer">
+              <li><h4>Thành lập năm 2022</h4></li>
+              <li><p>Nguyễn Thi Quý</p></li>
+              <li><p>Đỗ Đình Nhật</p></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div id="footer_slide">
+        <p>Copy right &copy; 2022</p>
+      </div>
+
+      <div class="modal">
+        <div class="modal_container">
+          <div class="modal_close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="modal_header">
+            <i class="fa-solid fa-bag-shopping"></i>Khoá học
+          </div>
+
+          <div class="modal_body">
+            <label for="ticket_quantity" class="modal_label">
+              <i class="fa-solid fa-phone"></i> Số điện thoại
+            </label>
+            <input
+              id="ticket_quantity"
+              type="text"
+              class="modal_input"
+              placeholder="Nhập số điện thoại..."
+            />
+
+            <label for="ticket_email" class="modal_label">
+              <i class="fa-solid fa-user"></i> Email
+            </label>
+            <input
+              id="ticket_email"
+              type="email"
+              class="modal_input"
+              placeholder="Enter email..."
+            />
+            <button id="buy_tickets">
+              Hoàn tất <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+
+          <div class="modal_footer">
+            <p class="modal_help">
+              Need
+              <a
+                href="mailto:2151053052quy@ou.edu.vn?subject=Trợ giúp&body=Thắc mắc"
+                >help?</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,578 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+#head
+{
+    background-color: #555;
+    text-transform: uppercase;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#head #header_top img
+{
+
+    height: 59px;
+    padding-left: 20px;
+}
+
+#head #header_menu #list_menu_header
+{
+    height: 46px;
+    display: flex;
+    list-style-type: none;
+}
+#head #header_menu
+{
+    box-shadow: 0 0 13px rgba(0,0,0,0.5);
+}
+#head #header_menu #list_menu_header > li
+{
+    line-height: 46px;
+}
+#head #header_menu #list_menu_header li> a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#head #header_menu #list_menu_header li:last-child
+{
+    position: relative;
+}
+#head #header_menu #list_menu_header li .task_bar
+{
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    list-style-type: none;
+    opacity: 0;
+    min-width: 150px;
+    z-index: 1;
+    box-shadow: 0 0 13px rgba(0,0,0,0.5);
+    left: -10px;
+}
+#head #header_menu #list_menu_header li a
+{
+    display: block;
+    padding: 0 20px;
+}
+
+#head #header_menu #list_menu_header li:hover >a
+{
+    background-color: white;
+    color: black;
+}
+#head #header_menu #list_menu_header li:hover .task_bar
+{
+    position: relative;
+    opacity: 1;
+    transition: opacity 1.5s;
+    left: 0;
+}
+#head #header_menu #list_menu_header li:hover .task_bar::after
+{
+    content: "";
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+}
+#slider
+{   
+    z-index: -1;
+    padding-top: 40%;
+    background: url('hinh-nen-binh-minh-dep_013049932.jpg') no-repeat top center / cover ;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+}
+#slider .text_slider
+{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%; /*căn giữa*/
+    font-size: 1.3rem;
+}
+#slider .text_heading
+{
+    padding-bottom: 15px;
+}
+#slider .text_description
+{
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.animate__animated
+{
+    animation-iteration-count: infinite;
+}
+#course_list .course_list_header
+{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+#course_list .course_list_header h1
+{
+    font-weight: 500;
+}
+.course_list_menu .course_list_items
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.course_list_menu .course_list_items img
+{
+    transition: transform ease .6s;
+}
+.course_list_menu .course_list_items> li:hover img
+{
+    transform: scale(0.9,0.9);
+    
+}
+.course_list_menu .course_list_items .detail ul
+{
+    list-style-type: none;
+}
+.course_list_menu .course_list_items .detail
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    opacity: 0;
+    transition: opacity 1s;;
+}
+.course_list_menu .course_list_items .detail ul li
+{
+    padding: 20px 0;
+}
+.course_list_menu .course_list_items> li:hover .detail
+{
+    opacity: 1;
+}
+@keyframes doimau {
+    from {background-color: red;
+        color: yellow;    
+    }
+    to {background-color: yellow;
+        color: red;
+    }
+
+}
+.changeColor
+{
+    animation: doimau 1s ease infinite;
+}
+#course_list .course_list_menu .course_list_items>li
+{
+    position: relative;
+    border: #555 solid;
+    margin: 20px 50px;
+}
+#course_list .course_list_menu .course_list_items >li> span
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#course_list .course_list_menu .course_list_items >li >span
+{
+    font-size: 20px;
+    background-color: red;
+    animation-name: doimau;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 10px 0;
+}
+#course_list .course_list_menu .course_list_items li p
+{
+    border: #333 solid;
+    border-radius: 10px;
+    background-color:   lightgreen;
+    text-transform: uppercase;
+}
+#why_join
+{
+    position: relative;
+    padding-top: 40%;
+    background: url('whyjoin.jpg') no-repeat top center / cover ;
+    width: 100%;
+    background-attachment: fixed;
+}
+.why_join_heading
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.why_join_heading > h2
+{
+ 
+    margin-bottom: 5px;
+}
+.why_join_heading > p
+{
+    background-color: rgba(0, 142, 200, 0.5);
+    margin-top: 1vw;
+    font-style: italic;
+    border-top: yellow solid 1px;
+    border-bottom: yellow solid 1px;
+    display: inline-block;
+}
+
+#why_join .why_join_icons
+{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#why_join .why_join_icons > div
+{
+    text-align: center;
+    cursor: cell;
+    padding: 0 1%;
+}
+
+#why_join .why_join_icons > div > p
+{
+    color: white;
+    font-style: normal;
+}
+#why_join .why_join_icons .why_join_icon div img
+{
+    width: 100%;
+    transition: transform ease .3s;
+}
+#why_join .why_join_icons > div i
+{
+    color: white;
+}
+#why_join .why_join_icons div> img:hover
+{
+    transform: scale(1.1,1.2);
+}
+#card_items .card_heading 
+{
+    text-align: center;
+}
+#card_items .card_heading > h2
+{
+    padding: 1vw 0;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+#card_items .card_heading > p
+{
+
+    padding: 0.3vw 0;
+    border-top: #555 solid 1px;
+}
+#card_items .card_heading :last-child
+{
+    border: none;
+    color: #555;
+    margin-bottom: 10px;
+}
+#card_items .item_card_section .card_item
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#card_items .item_card_section .choose_front_rear
+{
+    display: flex;
+    justify-content: center;
+}
+#card_items .item_card_section .choose_front_rear a
+{
+    padding: 10px 10px ;
+    text-decoration: none;
+    border: #333 solid ;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #555;
+    color: white;
+}
+#card_items .item_card_section .card_item img
+{
+    width: 100%;
+}
+
+#ensure 
+{
+    text-align: center;
+    list-style-type: none;
+}
+#ensure h3
+{
+    font-size: 1.3em;
+}
+#ensure ul.ensure_list li
+{
+    border: solid 1px green;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: greenyellow;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+}
+#ensure ul.ensure_list
+{
+    display: inline-block;
+}
+
+#foot
+{
+    background-color: #0F262E;
+}
+#foot #pad
+{
+    display: flex;
+    justify-content:center ;
+    margin: 0 3vw;
+}
+#foot ul
+{
+    list-style-type: none;
+
+}
+#foot ul li:first-child
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+#foot #pad ul li
+{
+    padding: 10px;
+}
+#foot #pad ul li p
+{
+    color: #9D9DA0;
+}
+#footer_slide
+{   
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 0;
+}
+#footer_slide p
+{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    animation: dichuyen 5s infinite;
+    position: relative;
+}
+@keyframes dichuyen
+{
+    0% {background-color:blue; left:0%;}
+    100% {background-color:lightblue; left:100%;}
+}
+
+#register
+{
+    text-align: center;
+    margin: 1em 0;
+}
+#register > a
+{
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    border: transparent solid;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #009688;
+}
+#register > a:hover
+{
+    opacity: 0.9;
+    color: red;
+}
+
+@keyframes uptodown
+{
+    from{
+        opacity: 0.1;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal /*sign_up*/
+{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal_container
+{
+    animation: uptodown ease .5s;
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+.modal_header {
+    background-color: #009698;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+i.fa-solid.fa-bag-shopping
+{
+    margin: 16px;
+}
+.modal_close:hover {
+    opacity: 1;
+    background-color: red;
+}
+.modal_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal_body {
+    padding: 16px;
+}
+.modal_label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal_input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy_tickets:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+#buy_tickets {
+    font-size: 15px;
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 18px;
+}
+.modal_footer
+{
+    padding: 16px;
+    text-align: right;
+
+}
+.modal_footer a
+{
+    color:lightblue
+}
+.modal.open
+{
+    display: flex;
+}
+
+li#search_section {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width:600px) {
+    #head
+    {
+        text-align: center;
+    }
+    #header_menu
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative !important;
+    }
+    #header_menu #list_menu_header  li  a
+    {
+        background-color: #333;
+        border-bottom: #555 solid 1px;
+    }
+    #list_menu_header li .task_bar
+    {
+        width: 100%;
+
+    }
+     #list_menu_header
+    {
+        flex-direction: column;
+        padding-top: 10px;
+
+    }
+    #slider,#why_join
+    {
+        background-attachment: local;
+        padding-top: 70%;
+    }
+    #slider
+    {
+        margin-top: 138px;
+    }
+    #slider .text_slider
+    {
+        top: 50%;
+    }
+
+}
